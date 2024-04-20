@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+
+<body>
+    <h1 id="title">Pesquisa de Satisfação</h1>
+    <p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Nome <input type="text" id="name" name="name" placeholder="Nome completo"
+                    required></label>
+            <label for="email" id="email-label">E-mail <input type="email" id="email" name="email"
+                    placeholder="Seu e-mail principal" required></label>
+            <label for="age">Idade <input id="age" type="number" min="6" max="150" placeholder="Sua idade"></label>
+            <label> Qual a sua ocupação?
+                <select id="dropdown">
+                    <option value="" disabled selected>Selecione sua ocupação</option>
+                    <option value="1">Estudante</option>
+                    <option value="2">Trabalho em tempo integral</option>
+                    <option value="3">Prefiro não dizer</option>
+                    <option value="4">Outro</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="margin">
+            <legend>Você recomendaria nosso serviço a um amigo?</legend>
+            <label for="yes"><input type="radio" class="inline" id="yes" name="radio" checked value="yes"> Sim</label>
+            <label for="maybe"><input type="radio" class="inline" id="maybe" name="radio" value="maybe"> Talvez</label>
+            <label for="no"><input type="radio" class="inline" id="no" name="radio" value="no"> Não</label>
+            <label for="number" id="number-label">Em uma escala de 1 a 10, quão satisfeito você está com nosso serviço?
+                <input type="number" id="number" name="number" min="1" max="10" placeholder="1 a 10" required></label>
+        </fieldset>
+        <fieldset class="margin">
+            <legend>O que você gostaria de ver melhorado? (Marque todas as opções aplicáveis)</legend>
+            <label for="projetos-front-end"><input type="checkbox" class="inline" id="projetos-front-end"
+                    name="projetos-front-end" value="projetos-front-end"> Projetos front-end</label>
+            <label for="projetos-back-end"><input type="checkbox" class="inline" id="projetos-back-end"
+                    name="projetos-back-end" value="projetos-back-end"> Projetos de back-end</label>
+            <label for="visualização-de-dados"><input type="checkbox" class="inline" id="visualização-de-dados"
+                    name="visualização-de-dados" value="visualização-de-dados"> Visualização de dados</label>
+            <label for="desafios"><input type="checkbox" class="inline" id="desafios" name="desafios" value="desafios">
+                Desafios</label>
+            <label for="comunidade-de-codigo-aberto"><input type="checkbox" class="inline"
+                    id="comunidade-de-codigo-aberto" name="comunidade-de-codigo-aberto"
+                    value="comunidade-de-codigo-aberto"> Comunidade de código
+                aberto</label>
+            <label for="videos"><input type="checkbox" class="inline" id="videos" name="videos" value="videos">
+                Vídeos</label>
+            <label for="forum"><input type="checkbox" class="inline" id="forum" name="forum" value="forum">
+                Fórum</label>
+            <label for="cursos-adicionais"><input type="checkbox" class="inline" id="cursos-adicionais"
+                    name="cursos-adicionais" value="cursos-adicionais"> Cursos adicionais</label>
+            <label class="textarea"> Deixe aqui seu comentário ou sugestão
+                <textarea name="sugestao" rows="4" placeholder="Comentário ou sugestão"></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Enviar">
+    </form>
+    <footer>
+        <p>Copyright © 2024 <a href="https://eduardobastier.com" target="_blank">Eduardo Bastier</a> All Rights
+            Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
